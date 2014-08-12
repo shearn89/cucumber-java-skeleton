@@ -27,17 +27,6 @@
              dest="${jars}/cucumber-html-${cucumber-html.version}.jar"/>
         <get src="${repo}/junit/junit/${junit.version}/junit-${junit.version}.jar"
              dest="${jars}/junit-${junit.version}.jar"/>
-
-        <!--
-        You can safely remove the following jars if you're not publishing results to Cucumber Pro.
-        In that case you should also comment out the line with CucumberProFormatter in cucumber.properties
-        -->
-        <get src="${repo}/info/cukes/cucumber-pro/${cucumber-pro.version}/cucumber-pro-${cucumber-pro.version}.jar"
-             dest="${jars}/cucumber-pro-${cucumber-pro.version}.jar"/>
-        <get src="${repo}/org/glassfish/tyrus/tyrus-client/${tyrus.version}/tyrus-client-${tyrus.version}.jar"
-             dest="${jars}/tyrus-client-${tyrus.version}.jar"/>
-        <get src="${repo}/org/glassfish/tyrus/tyrus-core/${tyrus.version}/tyrus-core-${tyrus.version}.jar"
-             dest="${jars}/tyrus-core-${tyrus.version}.jar"/>
     </target>
 
     <target name="classpath">
